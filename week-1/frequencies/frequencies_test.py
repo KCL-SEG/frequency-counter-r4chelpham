@@ -3,6 +3,9 @@ from frequencies import frequencies
 """Tests for the solution of your exercise."""
 """DO NOT CHANGE THIS FILE!"""
 
+
+
+
 def test_mixed_list():
     input = ['0', 4,4,'4','d','d','e',0,'a','d','4']
     output = frequencies(input)
