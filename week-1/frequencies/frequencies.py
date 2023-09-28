@@ -2,8 +2,6 @@
 """ENTER YOUR SOLUTION HERE!"""
 
 
-
-
 def frequencies(items):
     if not items:
         return {}
@@ -18,6 +16,4 @@ def frequencies(items):
     for i in items:
         frequencies[i] = frequencies.get(i, 0) + 1
     return frequencies
-
-
 
