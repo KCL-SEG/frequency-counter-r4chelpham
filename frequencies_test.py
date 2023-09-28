@@ -1,7 +1,7 @@
+from frequencies import frequencies
+
 """Tests for the solution of your exercise."""
 """DO NOT CHANGE THIS FILE!"""
-
-from frequencies import frequencies
 
 def test_mixed_list():
     input = ['0', 4,4,'4','d','d','e',0,'a','d','4']
@@ -14,10 +14,12 @@ def test_mixed_list():
     assert 4 not in output.keys()
     assert 0 not in output.keys()
 
+
 def test_empty_list():
     input = []
     output = frequencies(input)
     assert output == {}
+
 
 def test_example_1():
     input = ['a', 'a', 'b', 'b', 'b', 'c']
@@ -26,9 +28,16 @@ def test_example_1():
     assert output['b'] == 3
     assert output['c'] == 1
 
+
 def test_example_2():
     input = [100, 'Hello', '100', '100', 100]
     output = frequencies(input)
     assert output['100'] == 4
     assert output['Hello'] == 1
     assert 100 not in output.keys()
+
+
+test_example_2()
+test_example_1()
+test_empty_list()
+test_mixed_list()
